@@ -39,6 +39,8 @@ body {
 .panel {
   margin: 5px 5px 5px 5px;
   float: left;
+  height: 300px;
+  overflow: scroll;
   width: 23%;  /*TODO:  This needs to be dynamically calculated;*/
 }
 .well {
@@ -95,6 +97,12 @@ body {
   margin: auto;
   margin-top: 0;
   width: 60px;
+}
+
+.file .smallicon {
+  margin: auto;
+  margin-top: 0;
+  width: 20px;
 }
 
 .file.focus .icon {
