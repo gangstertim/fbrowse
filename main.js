@@ -7,7 +7,7 @@ var shell       = require('nw.gui').Shell;	// node-webkit
 var numBars     = 1;
 
 $(document).ready(function() {
-	var folder     = new folder_view.Folder($('#files'));
+	var folder     = new folder_view.Folder($('#beta'));
 	var addressbar = new abar.AddressBar($('#addressbar'));
   var currDir    = process.cwd();
   var numFolds   = 0;

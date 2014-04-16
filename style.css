@@ -5,20 +5,6 @@
 body {
   background-image: url('images/cloudbg.png')
 }
-
-#alpha_container {
-  position: absolute; 
-  height: 98%;
-  width: 98%;
-  border-collapse: collapse;
-  display : table;
-
-  left: 10px; 
-  right: 10px; 
-  top: 10px; 
-  bottom: 10px;
-}
-
 /*#beta {
   float: left; 
   position: absolute; 
@@ -36,18 +22,19 @@ body {
   overflow: auto;
 }*/
 
-.panel {
-  margin: 5px 5px 5px 5px;
-  float: left;
-  height: 300px;
-  overflow: scroll;
-  width: 23%;  /*TODO:  This needs to be dynamically calculated;*/
+#alpha_container {
+  position: absolute; 
+  height: 98%;
+  width: 98%;
+  border-collapse: collapse;
+  display : table;
+
+  left: 10px; 
+  right: 10px; 
+  top: 10px; 
+  bottom: 10px;
 }
-.well {
-  display : table-row;
-  vertical-align : bottom;
-  height : 1px;
-}
+
 .files {
   padding: 0;
   margin: 0;
@@ -58,16 +45,6 @@ body {
   margin: 0;
 }
 
-.folder {
-  padding: 2px;
-  margin: 2px;
-  width: 200px;
-  height: 500px;
-  display: inline-block;
-
-  text-align: center;
-  vertical-align: top;
-}
 
 .file {
   padding: 2px;
@@ -108,3 +85,35 @@ body {
 .file.focus .icon {
   -webkit-filter: invert(20%);
 }
+
+.folder {
+  padding: 2px;
+  margin: 2px;
+  width: 200px;
+  height: 500px;
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: top;
+}
+
+.panel {
+  margin: 5px 5px 5px 5px;
+  float: left;
+  height: 300px;
+  overflow: scroll;
+  width: 23%;  /*TODO:  This needs to be dynamically calculated;*/
+}
+
+.panel.focus {
+  background-color: #08C;
+  -webkit-border-radius: 4px;
+}
+
+.well {
+  display : table-row;
+  vertical-align : bottom;
+  height : 1px;
+}
+
+
